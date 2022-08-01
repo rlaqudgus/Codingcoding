@@ -1,6 +1,6 @@
 ﻿class Bj_2588
 {
-    public static void Main()
+    public static void Mai()
     {
         string firstNum = Console.ReadLine();
         string secondNum = Console.ReadLine();

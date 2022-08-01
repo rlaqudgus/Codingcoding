@@ -1,6 +1,6 @@
-﻿class Bj2557
+﻿class Bj_2557
 {
-    public static void Main()
+    public static void Mai()
     {
         Console.WriteLine("Hello World!");
     }

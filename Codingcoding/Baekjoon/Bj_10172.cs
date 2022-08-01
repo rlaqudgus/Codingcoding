@@ -1,6 +1,6 @@
 ﻿class Bj_10172
 {
-    public static void Main()
+    public static void Mai()
     {
         Console.WriteLine("|\\_/|");
         Console.WriteLine("|q p|   /}");

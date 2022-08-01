@@ -1,6 +1,6 @@
 ﻿class Bj_18108
 {
-    public static void Main()
+    public static void Mai()
     {
 
         string y = Console.ReadLine();

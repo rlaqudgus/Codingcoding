@@ -1,6 +1,6 @@
 ﻿class Bj_10869
 {
-    public static void Main()
+    public static void Mai()
     {
         string input = Console.ReadLine();
         string[] numbers = input.Split(" ");
