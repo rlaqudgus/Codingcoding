@@ -2,7 +2,7 @@
 
 class Bj_4375
 {
-    public static void Main()
+    public static void Mai()
     { 
         while (true)
         {
