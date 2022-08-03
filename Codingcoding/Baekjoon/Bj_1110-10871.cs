@@ -60,27 +60,30 @@ class Bj_111010871
 
         //1110
         //Input
-        int cycleStart = int.Parse(Console.ReadLine());
+//        int cycleStart = int.Parse(Console.ReadLine());
 
-        int count = 0;
-        int cycleEnd = 0;
+//        int count = 0;
+//        int cycleEnd = cycleStart;
 
-        while (cycleStart != cycleEnd)
-        {
-            int ten = cycleStart / 10;
-            int one = cycleStart % 10;
+//        do
+//        {
+//            int ten = cycleEnd / 10;
+//            int one = cycleEnd % 10;
 
-            if (ten+one>=10)
-            {
-                int newone = (ten + one) % 10;
-                cycleEnd = 10 * one + newone;
-            }
+//            if (ten + one < 10)
+//            {
+//                cycleEnd = 10 * one + ten + one;
+//            }
 
-            cycleEnd = 10 * one + ten + one;
-            count++;
-            Console.WriteLine("반복");
-        }
+//            else if (ten + one >= 10)
+//            {
+//                int newone = (ten + one) % 10;
+//                cycleEnd = 10 * one + newone;
+//            }
+//            count++;    
+//        } 
+//        while (cycleStart != cycleEnd);
 
-        Console.WriteLine(count);
-    }
-}
+//        Console.WriteLine(count);
+//    }
+//}
