@@ -2,7 +2,7 @@
 
 class Bj_111010871
 {
-    public static void Main()
+    public static void Mai()
     {
         //10871
         //    string[] NnX = Console.ReadLine().Split(" ");
@@ -60,30 +60,30 @@ class Bj_111010871
 
         //1110
         //Input
-//        int cycleStart = int.Parse(Console.ReadLine());
+        int cycleStart = int.Parse(Console.ReadLine());
 
-//        int count = 0;
-//        int cycleEnd = cycleStart;
+        int count = 0;
+        int cycleEnd = cycleStart;
 
-//        do
-//        {
-//            int ten = cycleEnd / 10;
-//            int one = cycleEnd % 10;
+        do
+        {
+            int ten = cycleEnd / 10;
+            int one = cycleEnd % 10;
 
-//            if (ten + one < 10)
-//            {
-//                cycleEnd = 10 * one + ten + one;
-//            }
+            if (ten + one < 10)
+            {
+                cycleEnd = 10 * one + ten + one;
+            }
 
-//            else if (ten + one >= 10)
-//            {
-//                int newone = (ten + one) % 10;
-//                cycleEnd = 10 * one + newone;
-//            }
-//            count++;    
-//        } 
-//        while (cycleStart != cycleEnd);
+            else if (ten + one >= 10)
+            {
+                int newone = (ten + one) % 10;
+                cycleEnd = 10 * one + newone;
+            }
+            count++;    
+        } 
+        while (cycleStart != cycleEnd);
 
-//        Console.WriteLine(count);
-//    }
-//}
+        Console.WriteLine(count);
+    }
+}
