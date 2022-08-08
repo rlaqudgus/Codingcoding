@@ -37,54 +37,116 @@
 
         // 나머지 3052
         //Input
-        int [] array = new int[10];
+        //int[] array = new int[10];
+        //int[] array2 = new int[42];
 
-        for (int i = 0; i < 10; i++)
-        {
-            int number = int.Parse(Console.ReadLine());
-            array[i] = number;
-            Console.WriteLine(array[i] % 42);
-        }
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    int number = int.Parse(Console.ReadLine());
+        //    array[i] = number;
+        //}
 
-        //Process 나왔는지 안나왔는지?? 체크
+        ////Process 나왔는지 안나왔는지?? 체크
+        //foreach (var a in array)
+        //{
+        //    for (int i = 0; i < array2.Length; i++)
+        //    {
+        //        if (i==a%42)
+        //        {
+        //            array2[i]++;
+        //        }
+        //    }
+        //}
+
+        //int result = 0;
+        //foreach (var repeatNumber in array2)
+        //{
+        //    if (repeatNumber!=0)
+        //    {
+        //        result++;
+        //    }
+        //}
+
+        //Console.WriteLine(result);
 
         //OX퀴즈 8958
+        
         //Input
 
         int caseNumber = int.Parse(Console.ReadLine());
+        string[] oxArray = new string[caseNumber]; 
+        int count = 0;
+        int oCount = 0;
+
         for (int i = 0; i < caseNumber; i++)
         {
-            Console.ReadLine();
+            string ox = Console.ReadLine();
+            oxArray[i] = ox;
         }
 
-        //최대,최소 10818
-        //Input
-        int numbers = int.Parse(Console.ReadLine());
-        string[] numberss = Console.ReadLine().Split(" ");
-        int[] newNumber = new int[numbers];
-
-        for (int i = 0; i < numbers; i++)
+        foreach (var oxCase in oxArray)
         {
-            newNumber[i]=int.Parse(numberss[i]);
-        }
 
-        for (int i = 0; i < numbers-1; i++)
-        {
-            for (int j = 1; j < numbers; j++)
+            for (int i = 0; i < oxCase.Length; i++)
             {
-                if (newNumber[i]>newNumber[j])
+
+                if(oxCase[i] == 'O')
                 {
-                    int temp = newNumber[i];
-                    newNumber[i] = newNumber[j];
-                    newNumber[j] = temp;
+                    oCount++;
+                    count += oCount;
                 }
+                else if (oxCase[i]=='X')
+                {
+                    oCount = 0;
+                }
+
             }
+
+            Console.WriteLine(count);
+
+            count = 0;
+            oCount = 0;
         }
+        
 
-        int min = newNumber[0];
-        int max = newNumber[newNumber.Length-1];
 
-        Console.WriteLine();
+        ////최대,최소 10818
+        ////Input
+        //int numbers = int.Parse(Console.ReadLine());
+        //string[] numberss = Console.ReadLine().Split(" ");
+        //int[] newNumber = new int[numbers];
+
+        //for (int i = 0; i < numbers; i++)
+        //{
+        //    newNumber[i] = int.Parse(numberss[i]);
+        //}
+
+        //int maxNumber = -1000000;
+
+        //int minNumber = 1000000;
+
+        //for (int i = 0; i < numbers; i++)
+        //{
+        //    if (maxNumber < newNumber[i])
+        //    {
+        //        maxNumber = newNumber[i];
+        //    }
+        //}
+
+        //for (int i = 0; i < numbers; i++)
+        //{
+        //    if (minNumber > newNumber[i])
+        //    {
+        //        minNumber = newNumber[i];
+        //    }
+        //}
+
+        //Console.WriteLine($"{minNumber} {maxNumber}");
+
+        //int min = newNumber[0];
+        //int max = newNumber[newNumber.Length-1];
+
+        //Console.WriteLine($"{min} {max}");
 
 
 
