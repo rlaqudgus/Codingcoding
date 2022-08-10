@@ -1,6 +1,6 @@
 ﻿class Bj_2577
 {
-    public static void Main()
+    public static void Mai()
     {
         ////숫자의 개수 2577
         ////Input

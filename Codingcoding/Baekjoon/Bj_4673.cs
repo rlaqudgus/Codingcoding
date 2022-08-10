@@ -1,11 +1,11 @@
 ﻿class Bj_4673
 {
-    public static void Main()
+    public static void Mai()
     {
-        //4673
-        //Input
-        //없음
-        
+        ////4673
+        ////Input
+        ////없음
+
         //int d(string sN)
         //{
         //    int nSn = int.Parse(sN);
@@ -18,37 +18,41 @@
         //    return nSn;
         //}
 
-        int d (int Num)
-        {
+        //int d(int Num)
+        //{
+        //    string Numstr = Num.ToString();
 
-            if (Num >= 10000)
-                return 0; 
+        //    for (int i = 0; i < Numstr.Length; i++)
+        //    {
+        //        int a = int.Parse(Numstr[i].ToString());
 
-            string Numstr = Num.ToString();
+        //        Num += a;
+        //    }
 
-             
+        //    return Num;
+        //}
 
-            for (int i = 0; i < Numstr.Length; i++)
-            {
-                int a = int.Parse(Numstr[i].ToString());
+        //bool[] array = new bool[20000];
 
-                Num += a;
-            }
+        //for (int j = 1; j < 10000; j++)
+        //{
+        //    array[d(j)]=true;
+        //}
 
-            Console.WriteLine(Num);
-
-            return d(Num);
-        }
-
-       
-
-        int count = 0;
-        while (count<=10000)
-        {
-
-            count++;
-        }
+        //for (int l = 1; l < 10000; l++)
+        //{
+        //    if (array[l]==false)
+        //    {
+        //        Console.WriteLine(l);
+        //    }
+        //}
         //1065 한수
-        
+
+        string a = Console.ReadLine();
+        char c = a[0];
+        int i = c;
+
+        Console.WriteLine(i);
+
     }
 }
